@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site.css')
+    |     
+    title Hello
+    |   &#x9;
+    style.
+      .alignmiddle {
+      width:70%;
+      margin: 0 auto;
+      }
+      .alignmiddle span {
+      margin:0.5rem;
+      }
+  body
+    br
+    br
+    div
+      div.floatRight
+        span 
+          a(href='/addnew') Add New
+        span 
+          a(href='/editOps') Edit Ops
+      div.clearfix
+      br
+      br
+
+    .alignmiddle
+      - for (var i in allData) {
+          div.singleCategory 
+            div.singlecatHead #{allData[i].name}
+            div.leftCat 
+              img.catItemImgClass(src='/#{allData[i].image}')
+            div.rightCat   
+              h2 Description
+              p #{allData[i].description}
+                h4.phoneClass Phone :  
+                span.phoneVal #{allData[i].phone}      
+                h4.phoneClass E-Mail :  
+                span.phoneVal #{allData[i].email}    
+                h4.phoneClass Address :  
+                span.phoneVal #{allData[i].address} 
+                br
+                a(href='/edit/#{allData[i].id}') Edit now   
+                 br
+                a(href='/delete/#{allData[i].id}') Delete        
+            div.clearfix      
+      - }      

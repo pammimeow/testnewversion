@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site.css')
+    |     
+    title Hello
+    |   &#x9;
+    style.
+      .alignmiddle {
+      width:70%;
+      margin: 0 auto;
+      }
+      .alignmiddle span {
+      margin:0.5rem;
+      }
+  body
+    .alignmiddle
+      h3 Showing description for #{obj.name}
+      img.descImgClass(src='/#{obj.image}')
+      br
+      h4 Description of the company
+      p #{obj.description}
+      h4.phoneClass Phone :  
+      span.phoneVal #{obj.phone}      
+      h4.phoneClass E-Mail :  
+      span.phoneVal #{obj.email}    
+      h4.phoneClass Address :  
+      span.phoneVal #{obj.address} 

@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site.css')
+    |     
+    title Hello
+    |   &#x9;
+    style.
+      .alignmiddle {
+      width:70%;
+      margin: 0 auto;
+      }
+      .alignmiddle span {
+      margin:0.5rem;
+      }
+  body
+    br
+    br
+    div
+      div.floatRight
+        span 
+          a(href='/addnew') Add New
+        span 
+          a(href='/editOps') Edit Ops
+      div.clearfix
+      br
+      br
+
+    .alignmiddle
+      form(action='/lookup', method='post')
+        h1 Search Business Today
+        |   &#x9;
+        input(type='text', name='bizname')
+        | &#x9;
+        input(type='submit', name='submitsearch')
+      | &#x9;
+      | &#x9;
+      br
+      br      
+      - for (var i in alphabets) {
+      span
+        a(href='/category/#{alphabets[i]}') #{alphabets[i]} 
+      - }

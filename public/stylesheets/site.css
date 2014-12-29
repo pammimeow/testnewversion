@@ -1,0 +1,58 @@
+.leftSidebar {
+width: 20%;
+background-color: #E8E7E7;
+min-height: 33rem;
+float:left;	
+}
+.leftSidebar div {
+	padding: 1rem;
+	background: #bbb;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 0.1rem solid;		
+}
+.content {
+	padding: 1rem;
+	width:75%;
+	float:left;	
+	background-color: #fff;
+}
+.singleCategory {
+	margin-bottom: 1rem;
+	background-color: #eee;
+	padding: 1%;
+}
+.leftCat {
+	width : 15%;
+	float:left;
+}
+.rightCat {
+	width: 80%;
+	float: right;
+}
+.catItemImgClass {
+	width : 100%;
+}
+.clearfix {
+	clear:both;
+}
+.singlecatHead {
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 1rem;
+	font-size: 1.2rem
+}
+.floatRight {
+	width:30%;
+	float:right;
+}
+
+.floatRight  span {
+	padding : 1rem;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
