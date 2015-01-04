@@ -170,7 +170,7 @@ app.get('/edit/:id', function(req, res) {
 
 
 http.createServer(app).listen(3000, function() {
- console.log("Biz vid app started");
+ console.log("Biz vid app started at port number 3000");
 });
 
 
